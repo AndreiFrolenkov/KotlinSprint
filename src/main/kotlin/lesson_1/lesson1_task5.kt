@@ -14,17 +14,17 @@ fun main() {
 
     val secondsInSpace: Int = 6487
     val hours: Int = secondsInSpace / 3600 % 24
-    var hoursToString = if (hours < 10) {
+    val hoursToString = if (hours < 10) {
         "0${hours.toString()}"
     } else hours.toString()
 
     val minutes: Int = secondsInSpace / 60 % 60
-    var minutesToString = if (minutes < 10) {
+    val minutesToString = if (minutes < 10) {
         "0${minutes.toString()}"
     } else minutes.toString()
 
     val seconds: Int = secondsInSpace % 60
-    var secondsToString = if (seconds < 10) {
+    val secondsToString = if (seconds < 10) {
         "0${seconds.toString()}"
     } else seconds.toString()
 
