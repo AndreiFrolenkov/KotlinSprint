@@ -22,7 +22,6 @@ package lesson_1
 Апогей орбиты – 327000
 */
 
-
 fun main() {
 
     val length: Long = 40_868_600_000
