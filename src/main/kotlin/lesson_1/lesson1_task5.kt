@@ -14,22 +14,8 @@ fun main() {
 
     val secondsInSpace: Int = 6487
     val hours: Int = secondsInSpace / 3600 % 24
-    val hoursToString = if (hours < 10) {
-        String.format("0%d", hours)
-    } else String.format("%d", hours)
-
     val minutes: Int = secondsInSpace / 60 % 60
-    val minutesToString = if (minutes < 10) {
-        String.format("0%d", minutes)
-    } else String.format("%d", minutes)
-
     val seconds: Int = secondsInSpace % 60
-    val secondsToString = if (seconds < 10) {
-        String.format("0%d", seconds)
-    } else String.format("%d", seconds)
 
-    println(String.format("%s:%s:%s", hoursToString, minutesToString, secondsToString))
-
-//    val resultString = "$hoursToString:$minutesToString:$secondsToString"
-//    println(resultString)
+    println(String.format("0%d:%d:0%d", hours, minutes, seconds))
 }
