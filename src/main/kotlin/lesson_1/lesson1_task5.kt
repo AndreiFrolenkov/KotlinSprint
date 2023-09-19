@@ -12,10 +12,10 @@ package lesson_1
 
 fun main() {
 
-    val secondsInSpace: Int = 6487
+    val secondsInSpace: Int = 6480
     val hours: Int = secondsInSpace / 3600 % 24
     val minutes: Int = secondsInSpace / 60 % 60
     val seconds: Int = secondsInSpace % 60
 
-    println(String.format("0%d:%d:0%d", hours, minutes, seconds))
+    println(String.format("%02d:%02d:%02d", hours, minutes, seconds))
 }
