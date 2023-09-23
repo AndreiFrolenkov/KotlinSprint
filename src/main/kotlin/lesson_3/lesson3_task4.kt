@@ -16,7 +16,6 @@ fun main() {
     var endPosition = "E4"
     var stepNumber = 0
     println("[$startPosition - $endPosition; $stepNumber]")
-
     stepNumber++
     startPosition = "D2"
     endPosition = "D3"
