@@ -10,9 +10,11 @@ package lesson_3
 fun main() {
 
     val stepInfo = "D2-D4;0"
-    val startPosition = stepInfo.substringBefore("-")
-    val endPosition = stepInfo.substring(3,5)
-    val stepNumber = (stepInfo.substringAfter(";")).toInt()
+    val dataString = stepInfo.split("-", ";")
+    val startPosition = dataString[0]
+    val endPosition = dataString[1]
+    val stepNumber = dataString[2]
+
     println(startPosition)
     println(endPosition)
     println(stepNumber)
