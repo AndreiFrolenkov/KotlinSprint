@@ -17,10 +17,10 @@ fun main() {
 
     val tablesToday = 13
     val tablesTomorrow = tablesToday - 4
-    val isFreeTablesToday = tables != tablesToday
-    val isFreeTablesTomorrow = tables != tablesTomorrow
+    val isFreeTablesToday = TABLES != tablesToday
+    val isFreeTablesTomorrow = TABLES != tablesTomorrow
     println("Доступность столиков на сегодня: $isFreeTablesToday\n" +
             "Доступность столиков на завтра: $isFreeTablesTomorrow")
 }
 
-const val tables = 13
+const val TABLES = 13
